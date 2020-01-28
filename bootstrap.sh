@@ -12,6 +12,9 @@ apt install crackmapexec -y
 # Install Gobuster
 apt install gobuster -y
 
+# Install BloodHound
+apt install bloodhound -y
+
 # INSTALL STATIC BINS Win/Linux (payloads/tools for targets)
 # ----------------------------------------------------------
 # create directories for storing the bins
@@ -81,3 +84,6 @@ git clone https://github.com/Hackplayers/evil-winrm.git
 
 # Powersploit
 git clone https://github.com/PowerShellMafia/PowerSploit.git
+
+# BloodHound Ingestors and Source
+git clone https://github.com/BloodHoundAD/BloodHound.git
