@@ -13,6 +13,9 @@ apt install nixnote2 -y
 # Remmina RDP
 apt install remmina -y
 
+# Terminator term
+apt install terminator -y
+
 # Update Metasploit and make db up by default and start
 apt install metasploit-framework -y
 systemctl enable postgresql
@@ -29,6 +32,13 @@ apt install gobuster -y
 
 # Install BloodHound
 apt install bloodhound -y
+
+# Install Veil Framework
+# Post install run veil and type y to complete
+apt install veil -y
+
+# Install Docker
+apt install docker -y
 
 # Install Go Lang and conf $GOPATH
 apt install golang -y
@@ -145,3 +155,22 @@ git clone https://github.com/sullo/nikto.git
 
 # Payload All The Things
 git clone https://github.com/swisskyrepo/PayloadsAllTheThings.git
+
+# Covenant
+git clone –recurse-submodules https://github.com/cobbr/Covenant
+wget -q https://packages.microsoft.com/config/ubuntu/19.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+dpkg -i packages-microsoft-prod.deb
+apt-get update -y
+apt-get install apt-transport-https -y
+apt-get update -y
+apt-get install dotnet-sdk-2.2 -y
+cd Covenant/Covenant
+dotnet build
+echo '#!/bin/bash' > covenant
+echo 'cd /opt/Covenant/Covenant' >> covenant
+echo 'dotnet run > /dev/null 2>&1 &' >> covenant
+echo 'echo "Starting Covenant..."' >> covenant
+echo 'sleep 15' >> covenant
+echo 'sudo -u brandon firefox-esr https://0.0.0.0:7443' >> covenant
+chmod +x covenant
+mv covenant /usr/bin
