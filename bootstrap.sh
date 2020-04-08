@@ -7,11 +7,33 @@
 # Update apt repos but don't upgrade, bad things happen in PWK Kali
 apt update
 
+# install pip for both python versions
+apt install python-pip python-pip3 -y
+
+# pip install impacket
+pip install impacket --yes
+pip3 install impacket --yes
+
 # Nixnote2 - nice note taking software w/ screenshots works with evernote
 apt install nixnote2 -y
 
 # Remmina RDP
 apt install remmina -y
+
+# Proxychains
+apt install proxychains -y
+
+# rinetd
+apt install rinetd -y
+
+# Shellter
+apt install shellter -y
+
+# Mingw 64 compiler
+apt install mingw-64 -y
+
+# B33f
+apt install beef-xss -y
 
 # Terminator term
 apt install terminator -y
@@ -20,6 +42,7 @@ apt install terminator -y
 apt install metasploit-framework -y
 systemctl enable postgresql
 systemctl start postgresql
+msfdb init
 
 # Update nmap to latest
 apt install nmap -y
@@ -135,8 +158,8 @@ git clone https://github.com/Tib3rius/AutoRecon.git
 # Arjun
 git clone https://github.com/s0md3v/Arjun.git
 
-# Windows Exploit Suggester
-git clone https://github.com/AonCyberLabs/Windows-Exploit-Suggester.git
+# Nikto2 latest
+git clone https://github.com/sullo/nikto.git
 
 # Windows Exploits (precompiled)
 git clone https://github.com/abatchy17/WindowsExploits.git
@@ -147,17 +170,39 @@ git clone https://github.com/danielmiessler/SecLists.git
 # Powerless
 git clone https://github.com/M4ximuss/Powerless.git
 
-# Linenum
-git clone https://github.com/rebootuser/LinEnum.git
-
-# Nikto2 latest
-git clone https://github.com/sullo/nikto.git
-
 # Payload All The Things
 git clone https://github.com/swisskyrepo/PayloadsAllTheThings.git
 
+# windows privesc check
+git clone https://github.com/pentestmonkey/windows-privesc-check.git
+
+# Windows Exploit Suggester Next Generation
+git clone https://github.com/bitsadmin/wesng.git
+
+# Linux smart enumeration
+git clone https://github.com/diego-treitos/linux-smart-enumeration.git
+
+# Linenum
+git clone https://github.com/rebootuser/LinEnum.git
+
+# Linux priv checker
+git clone https://github.com/sleventyeleven/linuxprivchecker.git
+
+# Reconnoitre
+git clone https://github.com/codingo/Reconnoitre.git
+
+# Fingerprint2 JS
+git clone https://github.com/Valve/fingerprintjs2.git
+
+# Interlace
+git clone https://github.com/codingo/Interlace.git
+
+# BC Sec Empire
+git clone https://github.com/BC-SECURITY/Empire.git
+pip2 install pefile --yes
+
 # Covenant
-git clone –recurse-submodules https://github.com/cobbr/Covenant
+git clone --recurse-submodules https://github.com/cobbr/Covenant
 wget -q https://packages.microsoft.com/config/ubuntu/19.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 dpkg -i packages-microsoft-prod.deb
 apt-get update -y
@@ -174,3 +219,10 @@ echo 'sleep 15' >> covenant
 echo 'sudo -u brandon firefox-esr https://0.0.0.0:7443' >> covenant
 chmod +x covenant
 mv covenant /usr/bin
+
+#Post install tasks
+
+echo "[*] Installation complete... There are a few post-install tasks that must be done manually."
+echo "[*] 1. Run Veil, then follow prompts for setup. There may be an error, if so run once more. When complete it will complain it can't find AutoIT."
+echo "Just: mv /var/lib/veil/wine/drive_c/Program\ Files\ \(x86\)/AutoIt3/ /var/lib/veil/wine/drive_c/Program\ Files/"
+echo "[*] 2.  "
