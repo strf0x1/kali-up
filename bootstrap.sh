@@ -1,6 +1,6 @@
 #!/bin/bash
 # Ugly Kali Supplemental Bootstrapping Script
-# Tested on latest Kali 2020.1 Release
+# Tested on latest Kali 2020.1b Release
 
 # DO APT INSTALLS
 # ----------------------------------------------------------
@@ -8,7 +8,7 @@
 apt update
 
 # install pip for both python versions
-apt install python-pip python-pip3 -y
+apt install python-pip python3-pip -y
 
 # pip install impacket
 pip install impacket --yes
@@ -28,9 +28,6 @@ apt install rinetd -y
 
 # Shellter
 apt install shellter -y
-
-# Mingw 64 compiler
-apt install mingw-64 -y
 
 # B33f
 apt install beef-xss -y
@@ -219,6 +216,11 @@ echo 'sleep 15' >> covenant
 echo 'sudo -u brandon firefox-esr https://0.0.0.0:7443' >> covenant
 chmod +x covenant
 mv covenant /usr/bin
+
+# fixes
+# Fix for x86 Mingw-64
+dpkg --add-architecture i386 && apt-get update && apt-get install wine32
+
 
 #Post install tasks
 
