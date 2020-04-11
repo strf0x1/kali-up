@@ -57,6 +57,9 @@ apt install bloodhound -y
 # Post install run veil and type y to complete
 apt install veil -y
 
+# install missing deps for Empire
+apt install m2crypto swig -y
+
 # Install Docker
 apt install docker -y
 
@@ -227,4 +230,4 @@ dpkg --add-architecture i386 && apt-get update && apt-get install wine32
 echo "[*] Installation complete... There are a few post-install tasks that must be done manually."
 echo "[*] 1. Run Veil, then follow prompts for setup. There may be an error, if so run once more. When complete it will complain it can't find AutoIT."
 echo "Just: mv /var/lib/veil/wine/drive_c/Program\ Files\ \(x86\)/AutoIt3/ /var/lib/veil/wine/drive_c/Program\ Files/"
-echo "[*] 2.  "
+echo "[*] 2. To setup Empire, go to /opt/Empire/setup and run setup_database.py, the install script"
