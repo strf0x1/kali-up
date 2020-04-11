@@ -231,3 +231,4 @@ echo "[*] Installation complete... There are a few post-install tasks that must 
 echo "[*] 1. Run Veil, then follow prompts for setup. There may be an error, if so run once more. When complete it will complain it can't find AutoIT."
 echo "Just: mv /var/lib/veil/wine/drive_c/Program\ Files\ \(x86\)/AutoIt3/ /var/lib/veil/wine/drive_c/Program\ Files/"
 echo "[*] 2. To setup Empire, go to /opt/Empire/setup and run setup_database.py, the install script"
+echo "[*] 3. To configure Bloodhound, type: neo4j console (then nav to the url it gives, set a password)"
