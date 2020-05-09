@@ -4,8 +4,8 @@
 
 # DO APT INSTALLS
 # ----------------------------------------------------------
-# Update apt repos but don't upgrade, bad things happen in PWK Kali
-apt update
+# upgrade used to be really broken, seems a better now in 2020.1 image
+apt update && apt upgrade -y
 
 # install pip for both python versions
 apt install python-pip python3-pip -y
@@ -188,7 +188,7 @@ git clone https://github.com/rebootuser/LinEnum.git
 # Linux priv checker
 git clone https://github.com/sleventyeleven/linuxprivchecker.git
 
-# PEAS Suite
+# PEAS Suite 
 https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite.git
 
 # Reconnoitre
