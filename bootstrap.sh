@@ -152,6 +152,9 @@ git clone https://github.com/PowerShellMafia/PowerSploit.git
 # BloodHound Ingestors and Source
 git clone https://github.com/BloodHoundAD/BloodHound.git
 
+# p0wny shell
+git clone https://github.com/flozz/p0wny-shell.git
+
 # AutoRecon
 git clone https://github.com/Tib3rius/AutoRecon.git
 
@@ -167,6 +170,9 @@ git clone https://github.com/abatchy17/WindowsExploits.git
 # SecLists
 git clone https://github.com/danielmiessler/SecLists.git
 
+# awesome burp wordlists
+git clone https://github.com/SilverPoision/a-full-list-of-wordlists.git
+
 # Powerless
 git clone https://github.com/M4ximuss/Powerless.git
 
@@ -178,6 +184,9 @@ git clone https://github.com/pentestmonkey/windows-privesc-check.git
 
 # Windows Exploit Suggester Next Generation
 git clone https://github.com/bitsadmin/wesng.git
+
+# Privilege Escalation Awesome Scripts
+git clone https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite.git
 
 # Linux smart enumeration
 git clone https://github.com/diego-treitos/linux-smart-enumeration.git
@@ -225,7 +234,8 @@ mv covenant /usr/bin
 
 # fixes
 # Fix for x86 Mingw-64
-dpkg --add-architecture i386 && apt-get update && apt-get install wine32
+dpkg --add-architecture i386 && apt-get update 
+apt-get install wine32 -y
 
 
 #Post install tasks
