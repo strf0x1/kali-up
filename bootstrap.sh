@@ -152,6 +152,9 @@ git clone https://github.com/PowerShellMafia/PowerSploit.git
 # BloodHound Ingestors and Source
 git clone https://github.com/BloodHoundAD/BloodHound.git
 
+# windapsearch
+git clone https://github.com/ropnop/windapsearch.git
+
 # p0wny shell
 git clone https://github.com/flozz/p0wny-shell.git
 
@@ -188,8 +191,18 @@ git clone https://github.com/bitsadmin/wesng.git
 # Privilege Escalation Awesome Scripts
 git clone https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite.git
 
+# enum4linux
+git clone https://labs.portcullis.co.uk/tools/enum4linux/
+
+# unix privesc check
+wget http://pentestmonkey.net/tools/unix-privesc-check/unix-privesc-check-1.4.tar.gz
+tar zxfv unix-privesc-check-1.4.tar.gz
+
 # Linux smart enumeration
 git clone https://github.com/diego-treitos/linux-smart-enumeration.git
+
+# dirsearch
+git clone https://github.com/maurosoria/dirsearch.git
 
 # Linenum
 git clone https://github.com/rebootuser/LinEnum.git
