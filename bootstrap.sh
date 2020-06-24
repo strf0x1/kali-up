@@ -210,6 +210,9 @@ git clone https://github.com/rebootuser/LinEnum.git
 # Linux priv checker
 git clone https://github.com/sleventyeleven/linuxprivchecker.git
 
+# windows kernel exploits
+git clone https://github.com/egre55/windows-kernel-exploits.git
+
 # PEAS Suite 
 https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite.git
 
