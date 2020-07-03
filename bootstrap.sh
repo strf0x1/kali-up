@@ -222,6 +222,9 @@ git clone https://github.com/codingo/Reconnoitre.git
 # SUID3NUM
 git clone https://github.com/Anon-Exploiter/SUID3NUM
 
+# Pspy
+git clone https://github.com/DominicBreuker/pspy.git
+
 # Fingerprint2 JS
 git clone https://github.com/Valve/fingerprintjs2.git
 
