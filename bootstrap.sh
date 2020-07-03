@@ -219,6 +219,9 @@ https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite.git
 # Reconnoitre
 git clone https://github.com/codingo/Reconnoitre.git
 
+# SUID3NUM
+git clone https://github.com/Anon-Exploiter/SUID3NUM
+
 # Fingerprint2 JS
 git clone https://github.com/Valve/fingerprintjs2.git
 
