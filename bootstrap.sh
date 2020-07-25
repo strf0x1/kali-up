@@ -4,7 +4,7 @@
 
 # DO APT INSTALLS
 # ----------------------------------------------------------
-# upgrade used to be really broken, seems a better now in 2020.1 image
+# upgrade used to be really broken, seems a better now in 2020.3 image
 apt update && apt upgrade -y
 
 # install pip for both python versions
@@ -152,8 +152,8 @@ git clone https://github.com/PowerShellMafia/PowerSploit.git
 # BloodHound Ingestors and Source
 git clone https://github.com/BloodHoundAD/BloodHound.git
 
-# windapsearch
-git clone https://github.com/ropnop/windapsearch.git
+# windapsearch  - new go version
+https://github.com/ropnop/go-windapsearch.git
 
 # p0wny shell
 git clone https://github.com/flozz/p0wny-shell.git
@@ -234,6 +234,9 @@ git clone https://github.com/codingo/Interlace.git
 # BC Sec Empire
 git clone https://github.com/BC-SECURITY/Empire.git
 pip2 install pefile --yes
+
+# g0x0dvibes kali lootbox
+git clone https://github.com/g0x0dvibes/kali-lootbox.git
 
 # Covenant
 git clone --recurse-submodules https://github.com/cobbr/Covenant
