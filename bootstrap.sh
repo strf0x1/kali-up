@@ -214,7 +214,7 @@ git clone https://github.com/sleventyeleven/linuxprivchecker.git
 git clone https://github.com/egre55/windows-kernel-exploits.git
 
 # PEAS Suite 
-https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite.git
+git clone https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite.git
 
 # Reconnoitre
 git clone https://github.com/codingo/Reconnoitre.git
