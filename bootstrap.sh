@@ -210,6 +210,9 @@ git clone https://github.com/rebootuser/LinEnum.git
 # Linux priv checker
 git clone https://github.com/sleventyeleven/linuxprivchecker.git
 
+# Linux exploit suggester 2 NG
+https://github.com/jondonas/linux-exploit-suggester-2
+
 # windows kernel exploits
 git clone https://github.com/egre55/windows-kernel-exploits.git
 
